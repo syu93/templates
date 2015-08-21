@@ -1,0 +1,56 @@
+/* Simple and sweet menu hover effect
+*************************************/
+*{
+    margin:0;
+}
+a {
+    color: #284EC0;
+    text-decoration: none
+}
+.menu{
+    display: inline-block;
+    height: 48px;
+    background-color: #FFF;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.item{
+    display: inline-block;
+}
+
+.item-link{
+    display: inline-block;
+    line-height: 48px;
+    padding: 0 10px 0 10px;
+    color: #737373;
+    text-decoration: none;
+    font-size: 14px;
+    /* transition-duration:0.5s; */
+    border-right: 1px #EEE solid;
+    vertical-align: top
+}
+
+.aero{
+    display: inline-block;
+    width: 100%;
+    margin-left: -100%;
+    margin-top: 46px;
+    text-align: center;
+}
+
+.aero span {
+    width: 0%;
+    margin-left: 50%;
+    display: block;
+    height: 2px;
+    background-color: #069;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.item:hover .aero span {
+    width: 100%;
+    margin-left: 0%;
+}
